@@ -1,11 +1,5 @@
-// src/pages/NotFound.jsx
-
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
 const NotFound = () => {
-    const navigate = useNavigate();
-
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-[#16171A] text-white">
             <h1 className="text-[72px] font-bold mb-4">404</h1>
@@ -14,5 +8,4 @@ const NotFound = () => {
         </div>
     );
 };
-
 export default NotFound;
