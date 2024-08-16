@@ -46,9 +46,6 @@ const CryptoPage = () => {
   useEffect(() => {
     localStorage.setItem("savedCryptos", JSON.stringify(selectedCryptos));
   }, [selectedCryptos]);
-
-  const changePage = (page) => setPageIndex(page);
-
   const toggleCryptoSelection = (crypto) => {
     const cryptoId = crypto.id;
     setSelectedCryptos((previousSelection) =>
@@ -57,7 +54,6 @@ const CryptoPage = () => {
         : [...previousSelection, crypto]
     );
   };
-
   const openDrawer = () => toggleDrawerVisible(true);
   const closeDrawer = () => toggleDrawerVisible(false);
 
